@@ -1,0 +1,114 @@
+<!-- This is 3 column layout using the hybrid method of coding.  It uses tables wrapped in divs like the 2 column layout, but also wraps them in list items because Gmail strips the middle div of inline styles.  The list items are displayed inline-block so that when the screen size is > 600, it displays horizontally.  When the screen size is less than 600 but more than 480, as is the case in Gmail with a narrow browser window, the list items stacked in the center with 2 on top and 1 below.  The widths of the columns and the padding between them must equal 575, as Outlook will show them as vertical if there is less than 25px of extra space between the content and the container (600px).  The widths and padding can be any combination that add up to 575px.  Note that if you open this file as is in a web browser, it will not display properly.  This code MUST be used in conjuntion with the template base in order to behave properly.  -->
+
+
+<style type="text/css">
+    @media only screen and (max-width: 480px) {
+
+        div[class=box] {
+            width: 100% !important;
+        }
+                
+        div[class=box3] {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+                
+        table[class=one] {
+            padding: 5px 5px 5px 5px !important;
+            width: 60% !important;
+            display: block !important;
+        }
+    }
+
+</style>
+
+
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <![endif]-->
+            <!-- START 3 COLUMN WRAPPER -->
+            <table class="content" align="center" cellpadding="0" celilspacing="0" style="width: 100%; max-width: 600px; padding: 0; margin: 0;" bgcolor="#FFFFFF">
+                <tr>
+                    <td align="center" style="padding: 0; margin: 0;" width="100%" bgcolor="#FFFFFF">
+                        <!-- START 3 COLUMN WRAPPER WITH BACKGROUND COLOR -->
+                        <table align="center" bgcolor="#007cc2" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding: 0; margin: 0;">
+                            <tr>
+                                <td align="center" style="padding: 10px 0 10px 0; mso-padding-alt: 10px 0 10px 10px; margin: 0;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td valign="top" style="padding: 0; margin: 0; color: #007cc2;">
+                                                <![endif]-->
+                                                <ul style="list-item-type: none; margin: 0; padding: 0; color: #007cc2;">
+                                                    <!-- START COLUMN 1 -->
+                                                    <li style="display: inline-block; margin: 0; padding: 0; color: #007cc2;">
+                                                        <div class="box3" style="width: 175px; vertical-align: top; padding: 0; margin: 0;" bgcolor="#007cc2">
+                                                            <table class="one" border="0" cellpadding="0" cellspacing="0" style="width: 175px; margin: 0; padding: 0; vertical-align: top;">
+                                                                <tr>
+                                                                    <td class="text" style="color: #000000; text-align: left; font-size: 17px; margin: 0; padding: 0;" valign="top" bgcolor="#007cc2">
+                                                                        <a href="#">
+                                                                            <img src="http://placehold.it/175x164" border="0" alt="Alt Text" width="175" align="center" />
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </li>
+                                                <!-- END COLUMN 1 -->
+                                                <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" style="padding: 0; margin: 0; color: #007cc2;">
+                                                <![endif]-->
+                                                    <!-- START COLUMN 2 -->
+                                                    <li style="display: inline-block; margin: 0; padding: 0; color: #007cc2;">
+                                                        <div class="box" style="width: 175px; vertical-align: top; padding: 0; margin: 0;" bgcolor="#007cc2">
+                                                            <table class="one" border="0" cellpadding="0" cellspacing="0" style="width: 175px; padding: 0; margin: 0;">
+                                                                <tr>
+                                                                    <td class="text" style="color: #000000; text-align: left; font-size: 17px; margin: 0; padding: 0;" valign="top" bgcolor="#007cc2">
+                                                                        <a href="#">
+                                                                            <img src="http://placehold.it/175x164" border="0" alt="Alt Text" width="175" align="center" />
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </li>
+                                                    <!-- END COLUMN 2 -->
+                                                <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" style="padding: 0; margin: 0; color: #007cc2;">
+                                                <![endif]-->
+                                                    <!-- START COLUMN 3 -->
+                                                        <li style="display: inline-block; margin: 0; padding: 0; color: 007cc2;">
+                                                            <div class="box3" style="width: 175px; vertical-align: top; padding: 0; margin: 0;" bgcolor="#007cc2">
+                                                                <table class="one" border="0" cellpadding="0" cellspacing="0" style="width: 175px; padding: 0; margin: 0;">
+                                                                    <tr>
+                                                                        <td class="text" bgcolor="#007cc2" style="color: #000000; text-align: left; font-size: 17px; margin: 0; padding: 0;" valign="top">
+                                                                            <a href="#">
+                                                                                <img src="http://placehold.it/175x164" border="0" alt="Alt Text" width="175" align="center" />
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </li>
+                                                    <!-- END COLUMN 3 -->
+                                                </ul>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+        </td>
+    </tr>
+</table>
+<![endif]-->

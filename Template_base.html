@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Client Name Goes Here</title>
+        <style type="text/css">
+            /* Import Google Fonts */
+            @import url(http://fonts.googleapis.com/css?family=Raleway);
+
+            /* Reset body styles */
+            body {margin: 0; padding: 0; min-width: 100%!important;}
+
+            /* Apple media query fix for .content max-width */
+            @media screen and (min-device-width: 601px), screen and (min-width: 601px) {
+                .content {width: 600px !important;}
+            }
+
+            @media only screen and (max-width: 480px) {
+                table[class=content] {width: 320px !important; max-width: 320px !important; display: block !important;}
+            }
+
+        </style>
+        <!-- Fixes Outlook changing web-font fallback from Times New Roman -->
+        <!--[if mso]>
+            <style type="text/css">
+                .text {
+                    font-family: Arial, sans-serif !important;
+                    }
+            </style>
+        <![endif]-->
+    </head>
+    <body bgcolor="#FFFFFF" style="margin: 0; padding: 0;">
+        <!-- Table  below acts like body, since body styles are stripped in some email clients -->
+        <table style="wrapper" width="100%" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+            <tr>
+                <td>
+                    <!-- Outlook fix for fluid layout -->
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Start Modular layout container -->
+                                    <center>
+                                    <table class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 600px; margin: 0; padding: 0;" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <!-- Begin modular layout -->
+
+                                                <!-- End modular layout -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </center>
+                                    <!-- End Modular layout container -->
+                                    <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                            </tr>
+                        </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+
